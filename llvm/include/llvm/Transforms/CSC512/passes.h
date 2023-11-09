@@ -1,0 +1,1 @@
+FUNCTION_PASS("csc512", CSC512Pass())

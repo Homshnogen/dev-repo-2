@@ -14,6 +14,7 @@
 ///
 //===----------------------------------------------------------------------===//
 
+// additional includes
 #include "llvm/Passes/PassBuilder.h"
 #include "llvm/ADT/StringSwitch.h"
 #include "llvm/Analysis/AliasAnalysisEvaluator.h"
@@ -265,6 +266,9 @@
 #include "llvm/Transforms/Vectorize/SLPVectorizer.h"
 #include "llvm/Transforms/Vectorize/VectorCombine.h"
 #include <optional>
+
+#include "llvm/Transforms/CSC512/includes.h"
+
 
 using namespace llvm;
 
