@@ -7,7 +7,7 @@ namespace llvm {
 
 class CSC512Pass : public PassInfoMixin<CSC512Pass> {
 public:
-  PreservedAnalyses run(Function &F, FunctionAnalysisManager &AM);
+  PreservedAnalyses run(Module &M, ModuleAnalysisManager &AM);
 };
 
 } // namespace llvm

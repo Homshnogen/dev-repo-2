@@ -40,6 +40,7 @@ MODULE_ALIAS_ANALYSIS("globals-aa", GlobalsAA())
 #ifndef MODULE_PASS
 #define MODULE_PASS(NAME, CREATE_PASS)
 #endif
+#include "llvm/Transforms/CSC512/passes.h"
 MODULE_PASS("always-inline", AlwaysInlinerPass())
 MODULE_PASS("attributor", AttributorPass())
 MODULE_PASS("attributor-light", AttributorLightPass())
@@ -301,7 +302,6 @@ FUNCTION_ALIAS_ANALYSIS("tbaa", TypeBasedAA())
 #ifndef FUNCTION_PASS
 #define FUNCTION_PASS(NAME, CREATE_PASS)
 #endif
-#include "llvm/Transforms/CSC512/passes.h"
 FUNCTION_PASS("aa-eval", AAEvaluator())
 FUNCTION_PASS("adce", ADCEPass())
 FUNCTION_PASS("add-discriminators", AddDiscriminatorsPass())
